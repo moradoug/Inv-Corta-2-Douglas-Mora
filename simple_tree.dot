@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="spore-print-color <= 2.5\nsamples = 6093\nvalue = [2926, 3167]\nclass = Survived", fillcolor="#f0f8fd"] ;
+1 [label="odor <= 6.5\nsamples = 2914\nvalue = [326, 2588]\nclass = Survived", fillcolor="#52a9e8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="odor <= 4.0\nsamples = 2734\nvalue = [146, 2588]\nclass = Survived", fillcolor="#44a3e6"] ;
+1 -> 2 ;
+3 [label="samples = 716\nvalue = [146, 570]\nclass = Survived", fillcolor="#6cb6ec"] ;
+2 -> 3 ;
+4 [label="samples = 2018\nvalue = [0, 2018]\nclass = Survived", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="samples = 180\nvalue = [180, 0]\nclass = Not survived", fillcolor="#e58139"] ;
+1 -> 5 ;
+6 [label="odor <= 5.5\nsamples = 3179\nvalue = [2600, 579]\nclass = Not survived", fillcolor="#eb9d65"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="odor <= 2.0\nsamples = 2110\nvalue = [2076, 34]\nclass = Not survived", fillcolor="#e5833c"] ;
+6 -> 7 ;
+8 [label="samples = 34\nvalue = [0, 34]\nclass = Survived", fillcolor="#399de5"] ;
+7 -> 8 ;
+9 [label="samples = 2076\nvalue = [2076, 0]\nclass = Not survived", fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label="stalk-shape <= 0.5\nsamples = 1069\nvalue = [524, 545]\nclass = Survived", fillcolor="#f7fbfe"] ;
+6 -> 10 ;
+11 [label="samples = 431\nvalue = [431, 0]\nclass = Not survived", fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label="samples = 638\nvalue = [93, 545]\nclass = Survived", fillcolor="#5baee9"] ;
+10 -> 12 ;
+}
